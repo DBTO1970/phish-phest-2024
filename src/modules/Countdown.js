@@ -24,12 +24,19 @@ const Countdown = () => {
             setSpecialMessage(" Strange Days");
         } else if (days === 4) {
             setSpecialMessage(" for 20");
+        } else if (days === 33) {
+            setSpecialMessage(" Trippity-Trips");
+        } else if (days === 42) {
+            setSpecialMessage("0")
         } else if (days === 46) {
             setSpecialMessage(" Days and the coal ran out!")
         } else if (days === 55) {
             setSpecialMessage("5! I can't drive 55!");
         } else if (days === 61) {
             setSpecialMessage(" Days-Let's get it on!");
+        } else if (days < 0){
+            
+            setSpecialMessage("Are you having fun yet?")
         }
     }, []);
     return (

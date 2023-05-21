@@ -9,8 +9,8 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 10s linear;
-    -webkit-animation: App-logo-spin infinite 10s linear;
+    animation: App-logo-out infinite 10s linear;
+    -webkit-animation:App-logo-out infinite 10s linear;
 }
 }
 
@@ -29,7 +29,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-in {
   from {
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -38,6 +38,23 @@
     -o-transform: scale(1);
 }
   to {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+} 
+} */
+
+@keyframes App-logo-out {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+  50% {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);

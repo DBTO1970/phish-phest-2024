@@ -1,7 +1,7 @@
 import logo from './ph980811_01.jpg';
 import './App.css';
 import Countdown from './modules/Countdown';
-
+// import RandomShow from './modules/RandomShow';
 function App() {
   return (
     <div className="App">
@@ -9,10 +9,10 @@ function App() {
       <h1>
           B-Town Throw-Down
         </h1>
-      <img src={logo} class="App-logo" alt="logo" />
+      <img src={logo} className="App-logo" alt="logo" />
         
         <Countdown />
-        
+        {/* <RandomShow /> */}
         
       </header>
       

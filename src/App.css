@@ -32,17 +32,40 @@
 }
 
 .randomShow {
-  background-color: rgb(246, 255, 163);
-  color: rgb(20, 0, 201);
+  background-color: rgb(20, 0, 201);
+  color: white;
   padding: 0 .5rem 0 .5rem;
   margin: 0 .25rem 0 .25rem;
   border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -ms-border-radius:20px;
+  -o-border-radius:20px;
 }
 
+.randomShow a {
+  color: white;
+}
+
+.randomShow a:visited {
+  color: white;
+}
+
+.randomShow a:hover {
+  color: red;
+}
+
+#bottom-text {
+  background-color: white;
+  color: rgb(20, 0, 201);
+  padding: .5rem;
+  margin: 1rem .25rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
 .countdown {
   animation: App-logo-out infinite .5s linear;
   -webkit-animation: App-logo-out infinite .5s linear;

@@ -1,7 +1,7 @@
-import logo from './ph980811_01.jpg';
+import logo from './NewStarlake2.PNG';
 import './App.css';
 import Countdown from './modules/Countdown';
-// import RandomShow from './modules/RandomShow';
+
 function App() {
   return (
     <div className="App">
@@ -12,7 +12,7 @@ function App() {
       <img src={logo} className="App-logo" alt="logo" />
         
         <Countdown />
-        {/* <RandomShow /> */}
+       
         
       </header>
       

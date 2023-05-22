@@ -3,10 +3,11 @@ import React, { useState, useEffect} from "react";
 const Countdown = () => {
     const [daysRemaining, setDaysRemaining] = useState(0);
     const [specialMessage, setSpecialMessage] = useState('days to go!');
-
+    
     useEffect(() => {
         const targetDate = new Date('July 21, 2023');
         const today = new Date();
+       
         const timeRemaining = targetDate.getTime() - today.getTime();
         const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
         setDaysRemaining(days);
@@ -44,6 +45,7 @@ const Countdown = () => {
             
             <h2> {daysRemaining} {specialMessage}</h2>
             <h2>Countdown</h2>
+            
         </div>
     );
 };

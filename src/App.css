@@ -16,6 +16,7 @@
 
 .App-header {
   background-image: url(./il_1588xN.3526174863_3la0.jpg);
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,6 +30,9 @@
   color: #61dafb;
 }
 
+.randomShow {
+  background-color: antiquewhite;
+}
 /* @keyframes App-logo-in {
   from {
     transform: scale(1);

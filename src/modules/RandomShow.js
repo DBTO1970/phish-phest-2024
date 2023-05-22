@@ -4,7 +4,7 @@ const RandomShow = () => {
     const [month, setMonth] = useState();
     const [day, setDay] = useState();
     const [year, setYear] = useState();
-
+    const today = new Date();
     const [randomPhishShow, setRandomPhishShow] = useState();
     const [reListenURL, setReListenURL] = useState();
 
@@ -23,7 +23,7 @@ const RandomShow = () => {
 
   
     useEffect(()=> {
-        const today = new Date();
+        
         fetchRandomShows();
         setMonth(today.getUTCMonth() + 1);
         setDay(today.getUTCDate());
@@ -31,13 +31,11 @@ const RandomShow = () => {
         
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [month, day, year]);
-    
     console.log(randomPhishShow);
-    
     return(
         <div className="randomShow">
             <h6>Today in Phish History {month}/{day}/{year}: <a href={reListenURL} rel="noreferrer" target="_blank">Listen on reListen(if available)</a></h6>
-            
+            <p></p>
         </div>
     )
 

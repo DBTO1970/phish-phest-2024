@@ -14,7 +14,7 @@ function App() {
       <img src={logo} className="App-logo" alt="logo" />
       <Countdown />
       <RandomShow />
-      <h3 id='bottom-text'>Countdown</h3>
+      
       </header>
       
     </div>

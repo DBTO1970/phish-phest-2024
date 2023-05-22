@@ -66,9 +66,10 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.countdown {
-  animation: App-logo-out infinite .5s linear;
-  -webkit-animation: App-logo-out infinite .5s linear;
+.countdown:hover{
+  animation: App-logo-out infinite 1s linear;
+  -webkit-animation: App-logo-out infinite 1s linear;
+  cursor: wait;
 }
 /* @keyframes App-logo-in {
   from {

@@ -4,9 +4,7 @@ const RandomShow = () => {
     const [month, setMonth] = useState();
     const [day, setDay] = useState();
     const [year, setYear] = useState();
-    // const [showOnThisDate, setShowOnThisDate] = useState(null);
-    const [isRandom, setIsRandom] = useState();
-    // const [allPhishShows, setAllPhishShows] = useState();
+
     const [randomPhishShow, setRandomPhishShow] = useState();
     const [reListenURL, setReListenURL] = useState();
 
@@ -15,7 +13,7 @@ const RandomShow = () => {
         const jsonData = await response.json();
         
         setRandomPhishShow(jsonData.response.data[0]);
-        setIsRandom(true);
+
         setYear(jsonData.response.data[0].short_date.slice(-4));
         
         setMonth(jsonData.response.data[0].short_date.slice(0, 2));
@@ -35,24 +33,13 @@ const RandomShow = () => {
     }, [month, day, year]);
     
     console.log(randomPhishShow);
-    // console.log(allPhishShows);
-    console.log({year});
-    console.log({month});
-    console.log({day});
-    if(isRandom){
-        return(
-            <div className="randomShow">
-                <h6>Today in Phish History {month}/{day}/{year}: <a href={reListenURL} rel="noreferrer" target="_blank">Listen on reListen</a></h6>
-                
-            </div>
-        )
-    } else {
-        return(
-            <div>
-                <p>Today is {month}/{day}/{year}</p>
-            </div>
-        )
-    }
+    
+    return(
+        <div className="randomShow">
+            <h6>Today in Phish History {month}/{day}/{year}: <a href={reListenURL} rel="noreferrer" target="_blank">Listen on reListen(if available)</a></h6>
+            
+        </div>
+    )
 
     
 }

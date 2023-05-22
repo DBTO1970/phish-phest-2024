@@ -1,6 +1,7 @@
 import logo from './NewStarlake2.PNG';
 import './App.css';
 import Countdown from './modules/Countdown';
+import RandomShow from './modules/RandomShow';
 
 function App() {
   return (
@@ -8,12 +9,12 @@ function App() {
       <header className="App-header">
       <h1>
           B-Town Throw-Down
-        </h1>
+      </h1>
+     
       <img src={logo} className="App-logo" alt="logo" />
-        
-        <Countdown />
-       
-        
+      <Countdown />
+      <RandomShow />
+      <h3>Countdown</h3>
       </header>
       
     </div>

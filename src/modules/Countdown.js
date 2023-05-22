@@ -3,13 +3,13 @@ import React, { useState, useEffect} from "react";
 const Countdown = () => {
     const [daysRemaining, setDaysRemaining] = useState(0);
     const [specialMessage, setSpecialMessage] = useState('days to go!');
+    const targetDate = new Date('July 21, 2023');
+    const today = new Date();
     
+    const timeRemaining = targetDate.getTime() - today.getTime();
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
     useEffect(() => {
-        const targetDate = new Date('July 21, 2023');
-        const today = new Date();
-       
-        const timeRemaining = targetDate.getTime() - today.getTime();
-        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        
         setDaysRemaining(days);
         if (days === 7) {
             setSpecialMessage(' days without Phish make one weak.');
@@ -39,12 +39,11 @@ const Countdown = () => {
             
             setSpecialMessage("Are you having fun yet?")
         }
-    }, []);
+    }, [days]);
     return (
-        <div>
+        <div className="countdown">
             
             <h2> {daysRemaining} {specialMessage}</h2>
-            <h2>Countdown</h2>
             
         </div>
     );

@@ -42,9 +42,9 @@ const Countdown = () => {
     }, [days]);
     return (
         <div id='bottom-text'>
-            <div >
+            
                 <h2 className="countdown">Countdown: <span> {daysRemaining} {specialMessage}</span></h2>
-            </div>
+            
         </div>
     );
 };

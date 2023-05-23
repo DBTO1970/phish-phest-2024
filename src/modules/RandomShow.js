@@ -9,7 +9,7 @@ const RandomShow = () => {
     const [location, setLocation] = useState();
     const [setlist, setSetlist] = useState();
     // const [randomPhishShow, setRandomPhishShow] = useState();
-    const [reListenURL, setReListenURL] = useState();
+    const [reListenURL, setReListenURL] = useState("");
 
     const [effectTriggered, setEffectTriggered] = useState(false);
 
@@ -19,9 +19,12 @@ const RandomShow = () => {
             return response.json();
         })
         .then(data => {
-            setShowDate(data.response.data[0].long_date);
+            
+            setShowDate(data.response.data[0].showdate);
+            
             setYear(data.response.data[0].short_date.slice(-4));
             setMonth(data.response.data[0].short_date.slice(0, 2));
+            
             setDay(data.response.data[0].short_date.slice(3,5));
             setVenue(data.response.data[0].venue);
             setLocation(data.response.data[0].location);
@@ -29,25 +32,27 @@ const RandomShow = () => {
             
         })
     }
-
+    // let urlDate = showDate.reverse();
     useEffect(()=> {
         if(!effectTriggered) {
             setEffectTriggered(true);
-            const today = new Date();
-            setMonth(today.getUTCMonth() + 1);
-            setDay(today.getUTCDate());
             fetchRandomShows();
-            setReListenURL(`https://relisten.net/phish/${year}/${month}/${day}`);
+            // const today = new Date();
+            
+            // setMonth(today.getUTCMonth() + 1);
+           
+            // setDay(today.getUTCDate());
+           
         }
         
-        
+        setReListenURL(`https://relisten.net/phish/${year}/${month}/${day}`);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [month, day, year, effectTriggered]);
     
     return(
         <div className="randomShow">
-            <h4>Today in Phish History {showDate} </h4>
+            <h4>Today in Phish History {showDate}</h4>
             <p><span dangerouslySetInnerHTML={{__html:venue}}/> {location} <span className="relisten"><a href={reListenURL} rel="noreferrer" target="_blank">Listen on reListen</a></span></p>
             <div className="setlist" dangerouslySetInnerHTML={{__html: setlist}}/>
             

@@ -20,7 +20,7 @@ const RandomShow = () => {
         })
         .then(data => {
             
-            setShowDate(data.response.data[0].showdate);
+            setShowDate(data.response.data[0].long_date);
             
             setYear(data.response.data[0].short_date.slice(-4));
             setMonth(data.response.data[0].short_date.slice(0, 2));

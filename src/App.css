@@ -2,6 +2,7 @@
   text-align: center;
   background-image: url(./il_1588xN.3526174863_3la0.jpg);
   background-size: cover;
+  
 }
 
 .App-logo {
@@ -17,7 +18,7 @@
 }
 
 .App-header {
-  
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,6 +26,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-style: 'Cherry Bomb One';
 }
 
 .App-link {
@@ -76,6 +78,11 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   max-width: 75vw;
+  font-family:'Cherry Bomb One', cursive;
+}
+
+.countdown {
+  font-family: 'Cherry Bomb One', cursive;
 }
 .countdown:hover{
   animation: App-logo-out infinite 1s linear;

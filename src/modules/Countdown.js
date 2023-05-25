@@ -18,17 +18,21 @@ const Countdown = () => {
         } else if (days === 0) {
             setSpecialMessage(" Let's get this show on the road!");
         } else if (days === 1) {
-            setSpecialMessage(" is the loneliest number...");
+            setSpecialMessage(" Day.  Can you feel it?");
         } else if (days === 2) {
             setSpecialMessage(" Days... Bag it, tag it!");
         } else if (days === 3) {
             setSpecialMessage(" Strange Days");
         } else if (days === 4) {
             setSpecialMessage(" for 20");
+        } else if (days === 5) {
+            setSpecialMessage(" Days.  Let's rock this week!");
         } else if (days === 23) {
             setSpecialMessage(" Mexican!");
+        } else if (days === 24) {
+            setSpecialMessage(" short, sweet days to go.");
         } else if (days === 33) {
-            setSpecialMessage(" Trippity-Trips");
+            setSpecialMessage(" Turdy-tree");
         } else if (days === 42) {
             setSpecialMessage("0")
         } else if (days === 46) {

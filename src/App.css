@@ -78,11 +78,11 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   max-width: 75vw;
-  font-family:'Cherry Bomb One', cursive;
+  font-family:'Cherry Bomb One', 'Arial';
 }
 
 .countdown {
-  font-family: 'Cherry Bomb One', cursive;
+  font-family: 'Cherry Bomb One', 'Arial';
 }
 .countdown:hover{
   animation: App-logo-out infinite 1s linear;

@@ -26,7 +26,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  font-style: 'Cherry Bomb One';
+  font-style: 'Cherry Bomb One', sans-serif;
 }
 
 .App-link {
@@ -78,11 +78,11 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   max-width: 75vw;
-  font-family:'Cherry Bomb One', 'Arial';
+  font-family:'Cherry Bomb One', sans-serif;
 }
 
 .countdown {
-  font-family: 'Cherry Bomb One', 'Arial';
+  font-family: 'Cherry Bomb One', sans-serif;
 }
 .countdown:hover{
   animation: App-logo-out infinite 1s linear;

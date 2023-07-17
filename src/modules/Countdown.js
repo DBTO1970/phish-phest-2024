@@ -7,7 +7,7 @@ const Countdown = () => {
     const today = new Date();
     
     const timeRemaining = targetDate.getTime() - today.getTime();
-    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24) + 1);
     useEffect(() => {
         
         setDaysRemaining(days);

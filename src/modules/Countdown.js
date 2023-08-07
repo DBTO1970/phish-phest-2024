@@ -3,7 +3,7 @@ import React, { useState, useEffect} from "react";
 const Countdown = () => {
     const [daysRemaining, setDaysRemaining] = useState(0);
     const [specialMessage, setSpecialMessage] = useState('days to go!');
-    const targetDate = new Date('July 21, 2023');
+    const targetDate = new Date('October 6, 2023');
     const today = new Date();
     
     const timeRemaining = targetDate.getTime() - today.getTime();
@@ -53,7 +53,7 @@ const Countdown = () => {
     return (
         <div id='bottom-text'>
             
-                <h2 className="countdown">Countdown: <span> {daysRemaining} {specialMessage}</span></h2>
+                <h4 className="countdown">Countdown: <span> {daysRemaining} {specialMessage}</span></h4>
             
         </div>
     );

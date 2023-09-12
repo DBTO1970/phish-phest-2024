@@ -67,7 +67,7 @@ const Countdown = () => {
     return (
         <div id='bottom-text'>
             
-                <h4 className="countdown">Countdown: <span> {daysRemaining} {specialMessage}</span></h4>
+                <h4 className="countdown"><span> {daysRemaining} {specialMessage}</span></h4>
             
         </div>
     );

@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <h1>
-          Tennessee Timer<br /><em>Fun on the Run</em>
+          Yes, a FESTIVAL!!!<br /><em>What DID Della Wear?</em>
       </h1>
       <img src={logo} className="App-logo" alt="logo" />
       <Countdown />

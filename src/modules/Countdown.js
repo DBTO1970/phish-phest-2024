@@ -43,14 +43,26 @@ const Countdown = () => {
             setSpecialMessage(" Ray Lewis Day");
         } else if (days === 55) {
             setSpecialMessage("5! I can't drive 55!");
+        } else if(days >= 101) {
+            setSpecialMessage(" Days. Almost double-digits");
         } else if (days === 61) {
             setSpecialMessage(" Days-Let's get it on!");
+        } else if(days === 69) {
+            setSpecialMessage(" - oh grow up.");
+        } else if(days === 99) {
+            setSpecialMessage(" Problems is what I got");
+        } else if(days === 246) {
+            setSpecialMessage(" 8-Who do we appreciate?! Phish!!");
+        } else if(days === 100) {
+            setSpecialMessage(" Ace Double Donuts");
+        } else if(days === 200) {
+            setSpecialMessage(" Duece Double Donuts");
+        } else if(days === 300) {
+            setSpecialMessage(" Trip Double Donuts");
         } else if (days < 0){
             
             setSpecialMessage("Are you having fun yet?")
-        } else if(days >= 100) {
-            setSpecialMessage(" Days. Almost double-digits");
-        }
+        } 
     }, [days]);
     return (
         <div id='bottom-text'>

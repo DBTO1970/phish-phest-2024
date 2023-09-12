@@ -48,6 +48,8 @@ const Countdown = () => {
         } else if (days < 0){
             
             setSpecialMessage("Are you having fun yet?")
+        } else if(days >= 100) {
+            setSpecialMessage(" Days. Almost double-digits");
         }
     }, [days]);
     return (

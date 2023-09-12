@@ -43,8 +43,10 @@ const Countdown = () => {
             setSpecialMessage(" Ray Lewis Day");
         } else if (days === 55) {
             setSpecialMessage("5! I can't drive 55!");
-        } else if(days >= 101) {
+        } else if(days === 302) {
             setSpecialMessage(" Days. Almost double-donuts");
+        } else if(days === 301) {
+            setSpecialMessage(" Days. Who's ready for Donuts?");
         } else if (days === 61) {
             setSpecialMessage(" Days-Let's get it on!");
         } else if(days === 69) {
@@ -62,7 +64,9 @@ const Countdown = () => {
         } else if (days < 0){
             
             setSpecialMessage("Are you having fun yet?")
-        } 
+        } else {
+            setSpecialMessage(" Days-Wait for it...Wait for it...");
+        }
     }, [days]);
     return (
         <div id='bottom-text'>

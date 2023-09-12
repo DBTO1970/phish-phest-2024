@@ -44,7 +44,7 @@ const Countdown = () => {
         } else if (days === 55) {
             setSpecialMessage("5! I can't drive 55!");
         } else if(days >= 101) {
-            setSpecialMessage(" Days. Almost double-digits");
+            setSpecialMessage(" Days. Almost double-donuts");
         } else if (days === 61) {
             setSpecialMessage(" Days-Let's get it on!");
         } else if(days === 69) {
@@ -54,11 +54,11 @@ const Countdown = () => {
         } else if(days === 246) {
             setSpecialMessage(" 8-Who do we appreciate?! Phish!!");
         } else if(days === 100) {
-            setSpecialMessage(" Ace Double Donuts");
+            setSpecialMessage(" Ace Double-Donuts");
         } else if(days === 200) {
-            setSpecialMessage(" Duece Double Donuts");
+            setSpecialMessage(" Duece Double-Donuts");
         } else if(days === 300) {
-            setSpecialMessage(" Trip Double Donuts");
+            setSpecialMessage(" Trip Double-Donuts");
         } else if (days < 0){
             
             setSpecialMessage("Are you having fun yet?")

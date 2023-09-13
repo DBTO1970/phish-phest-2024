@@ -65,7 +65,7 @@ const Countdown = () => {
             
             setSpecialMessage("Are you having fun yet?")
         } else {
-            setSpecialMessage(" Days-Wait for it...Wait for it...");
+            setSpecialMessage(" Days-Still Waiting");
         }
     }, [days]);
     return (

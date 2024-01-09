@@ -13,7 +13,7 @@ function App() {
       </h1>
       <img src={logo} className="App-logo" alt="logo" />
       <Countdown />
-      <RandomShow />
+      {/* <RandomShow /> */}
       
       </header>
       

@@ -19,7 +19,7 @@ const RandomShow = () => {
             return response.json();
         })
         .then(data => {
-            
+            console.log(data);
             setShowDate(data.response.data[0].long_date);
             
             setYear(data.response.data[0].short_date.slice(-4));
